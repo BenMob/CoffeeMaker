@@ -8,7 +8,7 @@ import java.util.List;
 public interface CoffeeIF {
     void setEnvironment(CoffeeOSAPI env);
     void start();
-    void addCondiment(CondimentIF condiment, boolean isAddOn);
+    void addCondiment(CondimentIF condiment);
     double getCoffeePrice();
     List<CondimentIF> getCondiments();
 }

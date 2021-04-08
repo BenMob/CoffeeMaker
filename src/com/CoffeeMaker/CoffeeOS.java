@@ -30,15 +30,7 @@ public class CoffeeOS implements CoffeeOSAPI{
     @Override
     public CoffeeOSAPI addCondiment(CondimentIF condiment) {
         System.out.println("Adding " + condiment.getType());
-        currentCoffee.addCondiment(condiment, true);
-
-        /*
-        if(/*isAddon){
-
-        }else{
-
-        }*/
-
+        currentCoffee.addCondiment(condiment);
 
         return this;
     }

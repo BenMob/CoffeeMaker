@@ -10,6 +10,7 @@ public class AbstractCoffee implements CoffeeIF{
     protected CoffeeOSAPI environment;
     protected List<CondimentIF> condiments;
 
+
     @Override
     public void setEnvironment(CoffeeOSAPI env){
         this.environment = env;
@@ -20,11 +21,8 @@ public class AbstractCoffee implements CoffeeIF{
     public void start(){}
 
     @Override
-    public void addCondiment(CondimentIF condiment, boolean isAddOn) {
-        if(isAddOn){
-            System.out.println("Adding extra " + condiment.getType());
+    public void addCondiment(CondimentIF condiment) {
             this.condiments.add(condiment);
-        }
     }
 
     @Override

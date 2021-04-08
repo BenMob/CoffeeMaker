@@ -1,10 +1,12 @@
 package com.CoffeeMaker.Coffee;
 
+import com.CoffeeMaker.Condiment.CondimentIF;
+
+import java.util.List;
+
 public class CoffeeLatte extends AbstractCoffee{
-    private double price;
-    public CoffeeLatte(){
-        this.price = 3;
-    }
+    private final double price = 3;
+
 
     @Override
     public double getCoffeePrice() {

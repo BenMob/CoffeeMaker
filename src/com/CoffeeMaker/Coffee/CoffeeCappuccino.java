@@ -1,10 +1,8 @@
 package com.CoffeeMaker.Coffee;
 
 public class CoffeeCappuccino extends AbstractCoffee{
-    private double price;
-    public CoffeeCappuccino(){
-        this.price = 5;
-    }
+    private final double price = 5;
+
 
     @Override
     public double getCoffeePrice() {
